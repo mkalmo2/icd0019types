@@ -4,24 +4,24 @@ public class Code {
 
     public static void main(String[] args) {
 
-        Integer[] numbers = new Integer[] {1, 3, -2, 9};
+        int[] numbers = {1, 3, -2, 9};
 
         System.out.println(sum(numbers)); // 11
     }
 
-    public static Integer sum(Integer[] numbers) {
+    public static int sum(int[] numbers) {
         return 0;
     }
 
-    public static Double average(Integer[] numbers) {
+    public static double average(int[] numbers) {
         return 0.0;
     }
 
-    public static Integer minimumElement(Integer[] integers) {
+    public static Integer minimumElement(int[] integers) {
         return null;
     }
 
-    public static String asString(Integer[] elements) {
+    public static String asString(int[] elements) {
         return "";
     }
 

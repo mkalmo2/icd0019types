@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="PDMPlugin">
-    <option name="customRuleSets">
-      <list>
-        <option value="$PROJECT_DIR$/../icd0019material/pmd/ruleset.xml" />
-      </list>
-    </option>
     <option name="options">
       <map>
         <entry key="Encoding" value="" />

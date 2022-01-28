@@ -57,6 +57,9 @@
         <exclude name="PositionLiteralsFirstInComparisons" />
         <exclude name="OneDeclarationPerLine" />
         <exclude name="UnusedImports" />
+        <exclude name="LiteralsFirstInComparisons" />
+        <exclude name="JUnit4TestShouldUseTestAnnotation" />
+        <exclude name="AvoidStringBufferField" />
     </rule>
 
     <rule ref="category/java/design.xml" >

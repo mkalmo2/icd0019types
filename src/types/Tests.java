@@ -40,6 +40,17 @@ public class Tests {
     }
 
     @Test
+    public void findsModeFromCharactersInString() {
+        assertThat("abcb", Code.mode("abcb"), is('b'));
+
+        assertThat("abccbc", Code.mode("abccbc"), is('c'));
+
+        assertThat("abcacbaca", Code.mode("abcacbaca"), is('a'));
+
+        assertThat("", Code.mode(""), is(nullValue()));
+    }
+
+    @Test
     public void squaresDigitsInString() {
         assertThat(Code.squareDigits("2"), is("4"));
 

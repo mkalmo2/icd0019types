@@ -25,6 +25,10 @@ public class Code {
         return "";
     }
 
+    public static Character mode(String input) {
+        return null;
+    }
+
     public static String squareDigits(String s) {
         return "";
     }

@@ -1,5 +1,8 @@
 package types;
 
+import java.util.Arrays;
+import java.util.Random;
+
 public class Code {
 
     public static void main(String[] args) {
@@ -33,5 +36,34 @@ public class Code {
         return "";
     }
 
+    public static int isolatedSquareCount() {
+        boolean[][] matrix = getSampleMatrix();
 
+        printMatrix(matrix);
+
+        int isolatedCount = 0;
+
+        // count isolates squares here
+
+        return isolatedCount;
+    }
+
+    private static void printMatrix(boolean[][] matrix) {
+        for (boolean[] row : matrix) {
+            System.out.println(Arrays.toString(row));
+        }
+    }
+
+    private static boolean[][] getSampleMatrix() {
+        boolean[][] matrix = new boolean[10][10];
+
+        Random r = new Random(5);
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                matrix[i][j] = r.nextInt(5) < 2;
+            }
+        }
+
+        return matrix;
+    }
 }

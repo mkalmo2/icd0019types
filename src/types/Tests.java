@@ -68,6 +68,11 @@ public class Tests {
         assertThat(Code.asString(new int[] { }), is(""));
     }
 
+    @Test
+    public void findsIsolatedSquareCount() {
+        assertThat(Code.isolatedSquareCount(), is(2));
+    }
+
     private Matcher<Double> closeTo(double value) {
         double precision = 0.00001;
 

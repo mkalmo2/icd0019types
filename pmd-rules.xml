@@ -26,6 +26,7 @@
         <exclude name="UnnecessaryFullyQualifiedName" />
         <exclude name="LinguisticNaming" />
         <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="UnnecessaryImport" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
@@ -48,6 +49,7 @@
         <exclude name="SystemPrintln" />
         <exclude name="UseVarargs" />
         <exclude name="JUnitTestsShouldIncludeAssert" />
+        <exclude name="SimplifiableTestAssertion" />
         <exclude name="LooseCoupling" />
         <exclude name="UseTryWithResources" />
         <exclude name="PreserveStackTrace" />
@@ -60,6 +62,7 @@
         <exclude name="LiteralsFirstInComparisons" />
         <exclude name="JUnit4TestShouldUseTestAnnotation" />
         <exclude name="AvoidStringBufferField" />
+        <exclude name="MethodReturnsInternalArray" />
     </rule>
 
     <rule ref="category/java/design.xml" >
@@ -80,6 +83,12 @@
         <properties>
             <property name="classReportLevel" value="120" />
             <property name="methodReportLevel" value="15" />
+        </properties>
+    </rule>
+
+    <rule ref="category/java/design.xml/CognitiveComplexity">
+        <properties>
+            <property name="reportLevel" value="20" />
         </properties>
     </rule>
 

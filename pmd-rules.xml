@@ -63,6 +63,8 @@
         <exclude name="JUnit4TestShouldUseTestAnnotation" />
         <exclude name="AvoidStringBufferField" />
         <exclude name="MethodReturnsInternalArray" />
+        <exclude name="UnusedPrivateMethod" />
+        <!-- false positive with parameters declared with var -->
     </rule>
 
     <rule ref="category/java/design.xml" >
@@ -89,6 +91,12 @@
     <rule ref="category/java/design.xml/CognitiveComplexity">
         <properties>
             <property name="reportLevel" value="20" />
+        </properties>
+    </rule>
+
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions">
+        <properties>
+            <property name="testClassPattern" value="[A-Z][a-zA-Z0-9]*" />
         </properties>
     </rule>
 

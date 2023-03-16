@@ -32,6 +32,7 @@
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
         <properties>
             <property name="classPattern" value="[A-Z][a-zA-Z0-9]*" />
+            <property name="testClassPattern" value="[A-Z][a-zA-Z0-9]*" />
             <property name="abstractClassPattern" value="[A-Z][a-zA-Z0-9]*" />
             <property name="interfacePattern" value="[A-Z][a-zA-Z0-9]*" />
             <property name="enumPattern" value="[A-Z][a-zA-Z0-9]*" />
@@ -91,12 +92,6 @@
     <rule ref="category/java/design.xml/CognitiveComplexity">
         <properties>
             <property name="reportLevel" value="20" />
-        </properties>
-    </rule>
-
-    <rule ref="category/java/codestyle.xml/ClassNamingConventions">
-        <properties>
-            <property name="testClassPattern" value="[A-Z][a-zA-Z0-9]*" />
         </properties>
     </rule>
 

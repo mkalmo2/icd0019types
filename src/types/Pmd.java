@@ -7,9 +7,9 @@ public class Pmd {
 
         printMatrix(matrix);
 
+        System.out.println(containsTrueCell(matrix));
         System.out.println(findFirstTrueCell(matrix));
-        System.out.println(countTrueCells(matrix));
-        System.out.println(iterateMatrix(matrix));
+        System.out.println(countTrueRow(matrix));
     }
 
     private static void printMatrix(boolean[][] sampleMatrix) {
@@ -22,34 +22,34 @@ public class Pmd {
     }
 
     // intentionally bad code
-    public static int countTrueCells(boolean[][] matrix) {
-        int result = 0;
+    public static boolean containsTrueCell(boolean[][] matrix) {
+        boolean result = false;
         if (matrix[0][0]) {
-            result++;
+            result = true;
         }
         if (matrix[0][1]) {
-            result++;
+            result = true;
         }
         if (matrix[0][2]) {
-            result++;
+            result = true;
         }
         if (matrix[1][0]) {
-            result++;
+            result = true;
         }
         if (matrix[1][1]) {
-            result++;
+            result = true;
         }
         if (matrix[1][2]) {
-            result++;
+            result = true;
         }
         if (matrix[2][0]) {
-            result++;
+            result = true;
         }
         if (matrix[2][1]) {
-            result++;
+            result = true;
         }
         if (matrix[2][2]) {
-            result++;
+            result = true;
         }
 
         return result;
@@ -89,7 +89,7 @@ public class Pmd {
     }
 
     // intentionally bad code
-    public static int iterateMatrix(boolean[][] matrix) {
+    public static int countTrueRow(boolean[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
                 if (matrix[i][j]) {

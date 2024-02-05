@@ -39,13 +39,19 @@ public class Code {
     public static int isolatedSquareCount() {
         boolean[][] matrix = getSampleMatrix();
 
-        printMatrix(matrix);
-
         int isolatedCount = 0;
 
         // count isolates squares here
 
         return isolatedCount;
+    }
+
+    public static boolean isIsolated(int row, int col) {
+        boolean[][] matrix = getSampleMatrix();
+
+        printMatrix(matrix);
+
+        return false;
     }
 
     private static void printMatrix(boolean[][] matrix) {

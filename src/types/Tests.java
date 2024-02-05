@@ -42,11 +42,8 @@ public class Tests {
     @Test
     public void findsModeFromCharactersInString() {
         assertThat("abcb", Code.mode("abcb"), is('b'));
-
         assertThat("abccbc", Code.mode("abccbc"), is('c'));
-
         assertThat("abcacbaca", Code.mode("abcacbaca"), is('a'));
-
         assertThat("", Code.mode(""), is(nullValue()));
     }
 
@@ -66,6 +63,17 @@ public class Tests {
         assertThat(Code.asString(new int[] { 1, 3, -2, 9 }), is("1, 3, -2, 9"));
 
         assertThat(Code.asString(new int[] { }), is(""));
+    }
+
+    @Test
+    public void testsWhetherSquareIsIsolated() {
+        assertThat(Code.isIsolated(0, 9), is(true));
+        assertThat(Code.isIsolated(5, 7), is(true));
+
+        assertThat(Code.isIsolated(0, 0), is(false));
+        assertThat(Code.isIsolated(9, 9), is(false));
+        assertThat(Code.isIsolated(5, 3), is(false));
+        assertThat(Code.isIsolated(7, 1), is(false));
     }
 
     @Test

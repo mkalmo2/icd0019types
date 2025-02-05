@@ -38,6 +38,7 @@
     </rule>
 
     <rule ref="category/java/bestpractices.xml">
+        <exclude name="SystemPrintln" />
         <exclude name="UnitTestAssertionsShouldIncludeMessage" />
         <exclude name="AvoidReassigningParameters" />
         <exclude name="UnitTestContainsTooManyAsserts" />

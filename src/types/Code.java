@@ -64,9 +64,9 @@ public class Code {
         boolean[][] matrix = new boolean[10][10];
 
         Random r = new Random(5);
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                matrix[i][j] = r.nextInt(5) < 2;
+        for (boolean[] row : matrix) {
+            for (int i = 0; i < row.length; i++) {
+                row[i] = r.nextInt(5) < 2;
             }
         }
 

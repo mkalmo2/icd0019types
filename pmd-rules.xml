@@ -14,19 +14,16 @@
         <exclude name="LocalVariableCouldBeFinal" />
         <exclude name="AtLeastOneConstructor" />
         <exclude name="ShortClassName" />
-        <exclude name="OnlyOneReturn" />
-        <exclude name="UseUnderscoresInNumericLiterals" />
-        <exclude name="UnnecessaryLocalBeforeReturn" />
-        <exclude name="TooManyStaticImports" />
-        <exclude name="CallSuperInConstructor" />
-        <exclude name="CommentDefaultAccessModifier" />
-        <exclude name="DefaultPackage" />
-        <exclude name="ConfusingTernary" />
-        <exclude name="UseDiamondOperator" />
-        <exclude name="UnnecessaryFullyQualifiedName" />
-        <exclude name="LinguisticNaming" />
-        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
         <exclude name="UnnecessaryImport" />
+        <exclude name="OnlyOneReturn" />
+        <exclude name="CallSuperInConstructor" />
+        <exclude name="UseDiamondOperator" /> <!-- broken, triggers even with var -->
+        <exclude name="EmptyControlStatement" />
+        <exclude name="UseExplicitTypes" />
+        <exclude name="LambdaCanBeMethodReference" />
+        <exclude name="TooManyStaticImports" />
+        <exclude name="UseUnderscoresInNumericLiterals" />
+        <exclude name="UnnecessaryBoxing" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
@@ -40,33 +37,19 @@
         </properties>
     </rule>
 
-
     <rule ref="category/java/bestpractices.xml">
-        <exclude name="JUnitAssertionsShouldIncludeMessage" />
+        <exclude name="UnitTestAssertionsShouldIncludeMessage" />
         <exclude name="AvoidReassigningParameters" />
-        <exclude name="JUnitTestContainsTooManyAsserts" />
+        <exclude name="UnitTestContainsTooManyAsserts" />
         <exclude name="UnusedFormalParameter" />
         <exclude name="GuardLogStatement" />
-        <exclude name="SystemPrintln" />
-        <exclude name="UseVarargs" />
-        <exclude name="JUnitTestsShouldIncludeAssert" />
-        <exclude name="SimplifiableTestAssertion" />
-        <exclude name="LooseCoupling" />
-        <exclude name="UseTryWithResources" />
-        <exclude name="PreserveStackTrace" />
-        <exclude name="ArrayIsStoredDirectly" />
-        <exclude name="UseAssertEqualsInsteadOfAssertTrue" />
-        <exclude name="UseAssertSameInsteadOfAssertTrue" />
-        <exclude name="PositionLiteralsFirstInComparisons" />
-        <exclude name="OneDeclarationPerLine" />
-        <exclude name="UnusedImports" />
         <exclude name="LiteralsFirstInComparisons" />
-        <exclude name="JUnit4TestShouldUseTestAnnotation" />
-        <exclude name="AvoidStringBufferField" />
-        <exclude name="MethodReturnsInternalArray" />
-        <exclude name="UnusedPrivateMethod" />
-        <!-- false positive with parameters declared with var -->
+        <exclude name="JUnit5TestShouldBePackagePrivate" />
+        <exclude name="UnusedPrivateMethod" /> <!-- false positive with parameters declared with var -->
+        <exclude name="UnusedLocalVariable" />
+        <exclude name="UseVarargs" />
     </rule>
+
 
     <rule ref="category/java/design.xml" >
         <exclude name="ImmutableField" />
@@ -77,9 +60,21 @@
         <exclude name="AvoidCatchingGenericException" />
         <exclude name="LoosePackageCoupling" />
         <exclude name="SignatureDeclareThrowsException" />
-        <exclude name="TooManyMethods" />
-        <exclude name="SingularField" />
-        <exclude name="GodClass" />
+        <exclude name="ExceptionAsFlowControl" />
+    </rule>
+
+    <rule ref="category/java/errorprone.xml">
+        <exclude name="NonSerializableClass" />
+        <exclude name="MissingSerialVersionUID" />
+        <exclude name="AvoidLiteralsInIfCondition" />
+        <exclude name="CloseResource" />
+        <exclude name="AvoidAccessibilityAlteration" />
+    </rule>
+
+    <rule ref="category/java/design.xml/TooManyMethods">
+        <properties>
+            <property name="maxmethods" value="15" />
+        </properties>
     </rule>
 
     <rule ref="category/java/design.xml/CyclomaticComplexity">
@@ -94,5 +89,6 @@
             <property name="reportLevel" value="20" />
         </properties>
     </rule>
+
 
 </ruleset>

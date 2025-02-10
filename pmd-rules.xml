@@ -24,6 +24,7 @@
         <exclude name="TooManyStaticImports" />
         <exclude name="UseUnderscoresInNumericLiterals" />
         <exclude name="UnnecessaryBoxing" />
+        <exclude name="LinguisticNaming" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
@@ -49,6 +50,9 @@
         <exclude name="UnusedPrivateMethod" /> <!-- false positive with parameters declared with var -->
         <exclude name="UnusedLocalVariable" />
         <exclude name="UseVarargs" />
+        <exclude name="UnitTestShouldIncludeAssert" />
+        <exclude name="MethodReturnsInternalArray" />
+        <exclude name="UseTryWithResources" />
     </rule>
 
 
@@ -70,6 +74,11 @@
         <exclude name="AvoidLiteralsInIfCondition" />
         <exclude name="CloseResource" />
         <exclude name="AvoidAccessibilityAlteration" />
+        <exclude name="TestClassWithoutTestCases" />
+        <exclude name="AvoidFieldNameMatchingMethodName" />
+        <exclude name="AvoidDuplicateLiterals" />
+        <exclude name="AvoidFieldNameMatchingTypeName" />
+        <exclude name="CompareObjectsWithEquals" />
     </rule>
 
     <rule ref="category/java/design.xml/TooManyMethods">

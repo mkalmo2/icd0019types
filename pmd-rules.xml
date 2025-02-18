@@ -65,6 +65,7 @@
         <exclude name="LoosePackageCoupling" />
         <exclude name="SignatureDeclareThrowsException" />
         <exclude name="ExceptionAsFlowControl" />
+        <exclude name="GodClass" />
     </rule>
 
     <rule ref="category/java/errorprone.xml">

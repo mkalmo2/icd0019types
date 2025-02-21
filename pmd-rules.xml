@@ -52,6 +52,7 @@
         <exclude name="UnitTestShouldIncludeAssert" />
         <exclude name="MethodReturnsInternalArray" />
         <exclude name="UseTryWithResources" />
+        <exclude name="SimplifiableTestAssertion" />
     </rule>
 
 

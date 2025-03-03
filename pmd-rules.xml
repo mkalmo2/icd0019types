@@ -24,6 +24,7 @@
         <exclude name="UseUnderscoresInNumericLiterals" />
         <exclude name="UnnecessaryBoxing" />
         <exclude name="LinguisticNaming" />
+        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">

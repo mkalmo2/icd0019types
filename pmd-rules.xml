@@ -25,6 +25,7 @@
         <exclude name="UnnecessaryBoxing" />
         <exclude name="LinguisticNaming" />
         <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="CommentDefaultAccessModifier" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
@@ -54,6 +55,8 @@
         <exclude name="MethodReturnsInternalArray" />
         <exclude name="UseTryWithResources" />
         <exclude name="SimplifiableTestAssertion" />
+        <exclude name="LooseCoupling" />
+        <exclude name="AvoidStringBufferField" />
     </rule>
 
 

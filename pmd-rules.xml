@@ -72,6 +72,7 @@
         <exclude name="SignatureDeclareThrowsException" />
         <exclude name="ExceptionAsFlowControl" />
         <exclude name="GodClass" />
+        <exclude name="SimplifyBooleanReturns" />
     </rule>
 
     <rule ref="category/java/errorprone.xml">

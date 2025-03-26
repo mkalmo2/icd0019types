@@ -26,6 +26,7 @@
         <exclude name="LinguisticNaming" />
         <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
         <exclude name="CommentDefaultAccessModifier" />
+        <exclude name="ShortMethodName" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">

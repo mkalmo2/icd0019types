@@ -53,6 +53,7 @@
         <exclude name="UnusedLocalVariable" />
         <exclude name="UseVarargs" />
         <exclude name="UnitTestShouldIncludeAssert" />
+        <exclude name="UnitTestShouldUseTestAnnotation" />
         <exclude name="MethodReturnsInternalArray" />
         <exclude name="UseTryWithResources" />
         <exclude name="SimplifiableTestAssertion" />

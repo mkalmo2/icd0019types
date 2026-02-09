@@ -6,8 +6,5 @@
 !/.idea/misc.xml
 !/.idea/icd0019types.iml
 !/.idea/modules.xml
-!/lib/assertj-core-3.27.3.jar
-!/lib/junit-jupiter-api-5.11.3.jar
-!/lib/junit-jupiter-engine-5.11.3.jar
-!/lib/junit-platform-commons-1.11.3.jar
-!/lib/junit-platform-engine-1.11.3.jar
+!/lib/assertj-core-3.27.7.jar
+!/lib/junit-platform-console-standalone-1.11.4.jar

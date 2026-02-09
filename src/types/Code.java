@@ -37,7 +37,7 @@ public class Code {
     }
 
     public static int isolatedSquareCount() {
-        boolean[][] matrix = getSampleMatrix();
+        boolean[][] table = getSampleTable();
 
         int isolatedCount = 0;
 
@@ -47,29 +47,29 @@ public class Code {
     }
 
     public static boolean isIsolated(int row, int col) {
-        boolean[][] matrix = getSampleMatrix();
+        boolean[][] table = getSampleTable();
 
-        printMatrix(matrix);
+        printTable(table);
 
         return false;
     }
 
-    private static void printMatrix(boolean[][] matrix) {
-        for (boolean[] row : matrix) {
+    private static void printTable(boolean[][] table) {
+        for (boolean[] row : table) {
             System.out.println(Arrays.toString(row));
         }
     }
 
-    private static boolean[][] getSampleMatrix() {
-        boolean[][] matrix = new boolean[10][10];
+    private static boolean[][] getSampleTable() {
+        boolean[][] table = new boolean[10][10];
 
         Random r = new Random(5);
-        for (boolean[] row : matrix) {
+        for (boolean[] row : table) {
             for (int i = 0; i < row.length; i++) {
                 row[i] = r.nextInt(5) < 2;
             }
         }
 
-        return matrix;
+        return table;
     }
 }

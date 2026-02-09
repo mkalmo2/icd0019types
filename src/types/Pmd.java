@@ -3,17 +3,16 @@ package types;
 public class Pmd {
 
     public static void main(String[] args) {
-        boolean[][] matrix = getSampleMatrix();
+        boolean[][] table = getSampleTable();
 
-        printMatrix(matrix);
+        printTable(table);
 
-        System.out.println(containsTrueCell(matrix));
-        System.out.println(findFirstTrueCell(matrix));
-        System.out.println(countTrueRow(matrix));
+        System.out.println(containsTrueCell(table));
+        System.out.println(countTrueRow(table));
     }
 
-    private static void printMatrix(boolean[][] sampleMatrix) {
-        for (boolean[] row : sampleMatrix) {
+    private static void printTable(boolean[][] table) {
+        for (boolean[] row : table) {
             for (boolean element : row) {
                 System.out.print(element ? "X" : "O");
             }
@@ -56,39 +55,6 @@ public class Pmd {
     }
 
     // intentionally bad code
-    public static int findFirstTrueCell(boolean[][] matrix) {
-        if (matrix[0][0]) {
-            return 1;
-        }
-        if (matrix[0][1]) {
-            return 2;
-        }
-        if (matrix[0][2]) {
-            return 3;
-        }
-        if (matrix[1][0]) {
-            return 4;
-        }
-        if (matrix[1][1]) {
-            return 5;
-        }
-        if (matrix[1][2]) {
-            return 6;
-        }
-        if (matrix[2][0]) {
-            return 7;
-        }
-        if (matrix[2][1]) {
-            return 8;
-        }
-        if (matrix[2][2]) {
-            return 9;
-        }
-
-        return -1;
-    }
-
-    // intentionally bad code
     public static int countTrueRow(boolean[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
@@ -107,7 +73,7 @@ public class Pmd {
         return -1;
     }
 
-    private static boolean[][] getSampleMatrix() {
+    private static boolean[][] getSampleTable() {
         boolean[][] matrix = new boolean[3][3];
 
         matrix[2][1] = true;

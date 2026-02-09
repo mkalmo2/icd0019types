@@ -87,6 +87,7 @@
         <exclude name="AvoidDuplicateLiterals" />
         <exclude name="AvoidFieldNameMatchingTypeName" />
         <exclude name="CompareObjectsWithEquals" />
+        <exclude name="ConstructorCallsOverridableMethod" />
     </rule>
 
     <rule ref="category/java/design.xml/TooManyMethods">

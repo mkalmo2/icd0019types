@@ -157,4 +157,4 @@ Andmetüübid
     
     Veenduge tulemuste lehelt, et tulemus on positiivne.
 
-Ülesannete seletused (1-13): https://youtu.be/XLDJwFQKD2o
+Ülesannete seletused (1-13): https://youtu.be/x5PR_4z4rF8

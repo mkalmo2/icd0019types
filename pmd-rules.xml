@@ -88,6 +88,7 @@
         <exclude name="AvoidFieldNameMatchingTypeName" />
         <exclude name="CompareObjectsWithEquals" />
         <exclude name="ConstructorCallsOverridableMethod" />
+        <exclude name="AssignmentInOperand" />
     </rule>
 
     <rule ref="category/java/design.xml/TooManyMethods">

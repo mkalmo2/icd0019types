@@ -27,6 +27,7 @@
         <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
         <exclude name="CommentDefaultAccessModifier" />
         <exclude name="ShortMethodName" />
+        <exclude name="ConfusingTernary" />
     </rule>
 
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
@@ -89,6 +90,7 @@
         <exclude name="CompareObjectsWithEquals" />
         <exclude name="ConstructorCallsOverridableMethod" />
         <exclude name="AssignmentInOperand" />
+        <exclude name="OverrideBothEqualsAndHashCodeOnComparable" />
     </rule>
 
     <rule ref="category/java/design.xml/TooManyMethods">

@@ -60,6 +60,7 @@
         <exclude name="SimplifiableTestAssertion" />
         <exclude name="LooseCoupling" />
         <exclude name="AvoidStringBufferField" />
+        <exclude name="ImplicitFunctionalInterface" />
     </rule>
 
 

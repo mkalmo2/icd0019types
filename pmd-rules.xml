@@ -92,6 +92,7 @@
         <exclude name="ConstructorCallsOverridableMethod" />
         <exclude name="AssignmentInOperand" />
         <exclude name="OverrideBothEqualsAndHashCodeOnComparable" />
+        <exclude name="AvoidCatchingGenericException" />
     </rule>
 
     <rule ref="category/java/design.xml/TooManyMethods">
